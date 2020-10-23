@@ -1,0 +1,94 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+
+% \title{My customized resume, Chinese version}
+% \date{2018-07-30}
+% \author{koushiro}
+
+% Set main font of document.
+% Enter the following command on the system command line:
+% (Windows) fc-list :lang=zh-cn >C:\Users\username\Desktop\font_zh-cn.txt
+% (*nix)    fc-list :lang=zh-cn > ~/font_zh-cn.
+% The content of the plain text document are all the fontsavailable in your current system.
+% \setmainfont{Microsoft YaHei}
+\setmainfont{Source Han Sans CN Medium}
+
+\begin{document}
+
+    % suppress displaying page number
+    \pagenumbering{gobble}  % arabic | roman | Roman | alph | Alph  gobble
+
+    \name{陈钦轩}
+
+    \contact{
+        \phone{(+86) 135-8807-3036}\ %
+        \email{koushiro.cqx@gmail.com}\ %
+        \github[koushiro]{https://github.com/koushiro}
+    }
+
+    \section{\faGraduationCap\ 教育经历}
+        \fillsubsection{\textbf{杭州电子科技大学} - 计算机科学与技术 (专业排名前20\%)}{2013.9 -- 2017.6}
+
+    \section{\faUser\ 工作经历}
+        \fillsubsection{\textbf{杭州义益钛迪信息技术有限公司} - C/C++开发}{2017.4 -- 2018.4}
+            \begin{itemize}
+            \item 参与开发基于全新架构的嵌入式主机服务端程序SMonitor: 
+            \\1. 负责用于采集数据传输的UDP/MODBUS协议模块的全新版本开发，与上层业务模块彻底解耦; 
+            \\2. 参与开发基于Mongoose网络库，RESTful架构的，用于嵌入式主机的Web后端框架;
+            \\3. 架构灵活，支持多类动环监控协议的配置接入；
+            \\4. 负责中国移动的动环监控业务的完整协议开发。
+
+            \item 负责开发嵌入式主机上的FINS/TCP协议帧转发工具，实现10ms时间级别的按字/位读写，\\在硬件性能稍差的设备上获得了接近原装欧姆龙设备的时间。
+            \item 参与开发基于QT5的采集数据模拟工具中的协议部分。
+            \item 负责维护原有铁塔平台的嵌入式主机服务端和接入公司内部云平台的嵌入式服务端程序，\\重构原来耦合严重的代码并根据业务功能模块化。
+            \end{itemize}
+
+    \section{\faGithubAlt\ 个人项目}
+        \fillsubsection{\textbf{tento}}{\link{https://github.com/koushiro/tento}}
+        Reactor模式(One loop per thread + threadpool)的Linux多线程网络库(C++14)。
+        \begin{itemize}
+            \item 基于spdlog和fmt库封装的异步日志库。
+            \item 定时器部分基于chrono和timerfd，依赖于自定义的相关时间类。
+            \item 只支持epoll的非阻塞多线程TCP服务端
+            \item 遵循RAII机制，带有绝大多数类的单元测试并通过 valgrind 内存泄漏测试。
+        \end{itemize}
+
+        \fillsubsection{\textbf{flvparser}}{\link{https://github.com/koushiro/flvparser}}
+        一个由Rust编写的FLV视频文件封装格式解析库。
+        \begin{itemize}
+            \item 基于 nom - a rust parser combinator framework。
+            \item 经过 CI 测试支持 Linux/MacOS/Windows。
+        \end{itemize}
+
+    \section{\faCogs\ 技能}
+        \begin{itemize}
+            \item \textbf{编程语言}: 两年以上的C++/C开发经验，Rust语言爱好者（CodeWars等级达到5kyu），写过Go/Java/C\#。
+
+            \item \textbf{操作系统}: 熟悉Linux/Windows平台，ArchLinux粉，拥有Linux下服务端多线程开发经验。
+
+            \item \textbf{编程技能}: STL，Boost，MariaDB，SQLite，Redis，Git，常用数据结构，算法和网络协议。
+
+            \item \textbf{编辑器与IDE}: 适应各类编辑器与IDE，常用JetBrains IDE, VS Code, Vim。
+        
+        \end{itemize}
+
+    \section{\faInfo\ 其他}
+        \begin{itemize}
+            \item \textbf{博客}: \link[http://koushiro.me] {http://koushiro.me/about}
+            \item 语言: 英文 - 熟练, 中文 - 母语水平
+            \item 个人标签: 细节强迫，求知欲，开源爱好者，Rustacean，Archer。
+            \item 简历的最新版本: 
+                \link{https://github.com/koushiro/resume/blob/master/resume-cn.pdf}
+        \end{itemize}
+
+    %-------------------------------------------------------------------------
+    % remember to choose the same pagenumbering option above as thenewpage 
+    % when you need multiple pages.
+    % \newpage
+    % \pagenumbering{arabic}
+
+    % \section{\faHeartO\ 成就}
+    % \fillline{\textbf{Something useful}}{20xx.xx}
+
+\end{document}

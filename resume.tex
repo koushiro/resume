@@ -1,0 +1,91 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+
+% \title{My customized resume}
+% \date{2018-07-30}
+% \author{koushiro}
+
+% set main font of document.
+% Enter the following command on the system command line:
+% (Windows) fc-list :lang=en-us > C:\Users\username\Desktop\font_en-us.txt
+% (*nix)    fc-list :lang=en-us > ~/font_en-us.
+% The content of the plain text document are all the fonts available in your current system.
+% \setmainfont{Lucida Sans Typewriter}
+
+\begin{document}
+
+    % suppress displaying page number
+    \pagenumbering{gobble}  % arabic | roman | Roman | alph | Alph | gobble
+
+    \name{Your Name}
+
+    \contact{
+        \phone{(+86) 135-8807-xxxx}\ %
+        \email{koushiro.cqx@gmail.com}\ %
+        \github[koushiro]{https://github.com/koushiro}
+    }
+
+    \section{\faGraduationCap\ Education}
+        \fillsubsection{\textbf{University Name}}{2013.9 -- 2017.6}
+
+    \section{\faUser\ Work Experiences}
+        \fillsubsection{\textbf{Company Name}}{2017.4 -- 2018.4}
+            \begin{itemize}
+            \item item 1
+            \item item 2
+            \item item 3
+            \item item 4
+            \end{itemize}
+
+    \section{\faGithubAlt\ Personal Projects}
+        \fillsubsection{\textbf{Project Name1}}{\link{project1 link}}
+        Overall description of the project
+        \begin{itemize}
+            \item item 1
+            \item item 2
+            \item item 3
+        \end{itemize}
+
+        \fillsubsection{\textbf{Project Name2}}{\link{project2 link}}
+        Overall description of the project
+        \begin{itemize}
+            \item item 1
+            \item item 2
+            \item item 3
+        \end{itemize}
+
+    \section{\faHeartO\ Achievements}
+        \fillline{\textbf{Something useful}}{2018.7}
+
+
+    \section{\faCogs\ Skills}
+        \begin{itemize}
+            \item \textbf{Programming Languages}: C++/C/Rust/Go
+
+            \item \textbf{C++/C}:
+            \textbf{3 years of experience}, something specific.
+
+            \item \textbf{Rust}: \textbf{1 year of experience}, something specific.
+
+            \item \textbf{Specific aspects}: something specific, such as compiler theory, CG, network, database, distributed system, machine learning...
+
+            \item \textbf{IDEs \& Editors}: JetBrains IDEs, Visual Studio Code, Vim and Visual Studio.
+        
+        \end{itemize}
+
+    \section{\faInfo\ Miscellaneous}
+        \begin{itemize}
+          \item Blog: \link[http://koushiro.me]{http://koushiro.me}
+          \item Languages: English - fluent, Chinese - native speaker
+          \item Get the lastest version of this resume from: 
+                \link{https://github.com/koushiro/resume}
+        \end{itemize}
+
+    % --------------------------------------------------------------------------
+    % remember to choose the same pagenumbering option above as the newpage 
+    % when you need multiple pages.
+    % \newpage
+    % \pagenumbering{arabic}
+
+\end{document}

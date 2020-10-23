@@ -1,0 +1,12 @@
+## LaTeX ##
+
+*.out
+*.bbl
+*.blg
+*.log
+*.gz
+*.bak
+*.html
+*.aux
+*.ilg
+*.ind
